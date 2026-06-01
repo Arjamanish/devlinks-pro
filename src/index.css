@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+}
+
+.dark {
+  --bg: #0b1220;
+  --card: #071025;
+  --text: #e6eef8;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* small responsive helpers */
+.container-sm {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* improve text truncation in link cards */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
